@@ -1,0 +1,519 @@
+
+@font-face {
+	font-family: lolo;
+	src: url(../font/FHOscar-Regular.otf)
+}
+@font-face {
+	font-family: login;
+	src: url(../font/Roboto-Light.ttf)
+}
+/*grafico*/
+.grafico{
+    width: 75%;
+    position: relative;
+    left: 7%;
+
+}
+
+
+
+/*grafico*/
+/*tabela*/
+/*apresentar cuso*/
+.mostrarCurso{
+    width: 75%;
+    height: 70%;
+    background-color: #efefef;
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    left: 12.5%;
+}
+.logoCurso{
+    width: 15%;
+    position:fixed;
+    top: 22%;
+    left: 20%;
+}
+.textoCurso{
+    font-family: login;
+    color: #000000;
+    font-size: 25px;
+    position: relative;
+    top: 5%;
+    left: 40%;
+   
+    
+}
+.textoCurso2{
+    width: 55%;
+    font-family: login;
+    color: #000000;
+    font-size: 18px;
+    position: relative;
+    top: 10%;
+    left: 40%;
+     text-align: justify;
+    
+}
+.mapaCurso{
+    width: 15%;
+    position:relative;
+    top: -10%;
+    left: 3%;
+}
+
+
+
+/*pesquisa*/
+#busca {
+margin:0 auto;
+padding:0;
+}
+#txtbusca {
+border:0px solid #222;
+background:#EEE;
+width:92%;
+height:36px;
+margin:0 auto;
+padding:5px 0 5px 5px;
+float:left; 
+line-height:36px; 
+}
+#btnBusca {
+background:#440099;
+position:relative;
+border:0px solid #222;
+color:#FFF; 
+margin:0 auto;
+padding:10px;
+border:0 none;
+font-size:11px;
+font-weight:bold;
+text-transform:uppercase;
+    font-family: login;
+}
+#btnBusca:hover {
+background:#440099; 
+}
+/*menu*/
+*{
+    box-sizing: border-box;
+    transition: all .3s ease;
+    
+}
+.font {
+    color: #440099;
+    font-size: 17px;
+}
+ul{
+    list-style: none;
+}
+.container{
+    
+    width: 100%;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    
+    position: fixed;
+    width: 100%;
+    top :0;
+    left:0;
+    background: #fff;
+}
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.open-nav{
+    display: none;
+}
+nav{
+    width: 100%;
+    max-width: 100%;
+    
+}
+nav .list-menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav .list-menu a{ 
+    position: relative;
+text-decoration: none;
+    color: #440099;
+    font-size: 16px;
+    font-family: lolo;
+    padding-bottom: 5px;
+   
+}
+
+
+
+nav .list-menu a:hover{
+    color:#5A3099;
+    
+}
+
+nav .list-menu a::before{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #5A3099;
+      transition: all .30s ease;
+}
+
+
+
+nav .list-menu a:hover::before{
+    width: 100%;
+     transition: all .3s ease;
+}
+.img1{
+    width: 100%;
+    
+}
+img{
+    width: 100%;
+}
+
+/*responsivo */
+
+
+.linha-vertical {
+  height: 500px;/*Altura da linha*/
+  border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    position: relative;
+    
+}
+
+a{
+    font: lolo;
+}
+.logo{
+    width: 125px;
+}
+.logoADM{
+    width: 125px;
+
+}
+.logo1{
+    width: 50px;
+}
+.botao{
+    position: fixed;
+        top:80%;
+    left: 67%;
+}
+.btn btn-outline-light{
+    background-color: #440099;
+}
+.login{
+    width: 25%;
+    height: 20%;
+    font-family: login;
+    position: relative;
+    left: 10%;
+    top: 20%;
+
+}
+
+.cadastro{
+    width: 50%;
+    height: 30%;
+    font-family: login;
+    position: relative;
+     left: 1%;
+      top: 5%;
+      
+}
+.imgcadastro{
+  width: 47%;
+    position: fixed;
+    left: 50%;
+    top:7%;
+}
+
+.fotologin{
+    width: 80%;
+    position: fixed;
+    left: 20%;
+    top: 0%
+}
+.pessoa{
+    width: 10%;
+    position: relative;
+    left: 17%;
+    top: 16%;
+  
+@media(max-width: 425px){
+    
+  
+    
+   
+    nav{
+        position: fixed;
+        top:0;
+        left:100%;
+        width: 100%;
+        height: 100%;
+        background:#f8f9fa59;
+    }
+    nav .list-menu{
+        flex-direction: column;
+        margin: 0;
+        padding: 60px 0 0 0;
+    }
+     nav .list-menu a{
+        display: block;
+         margin-bottom: 20px;
+    }
+    .open-nav{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 30px;
+        z-index: 3;
+    }
+    .open-nav .line {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #dc4588 ;
+        left: 0;
+        border-radius: 0px;
+    }
+    .open-nav .line.line_1{
+        top: 0 ;
+}
+      .open-nav .line.line_2{
+        top: 42% ;
+          transform: translateY(-50);
+          opacity: 1;
+    }
+      .open-nav .line.line_3{
+        bottom: 0 ;
+    }
+    button.open-nav.open .line.line_2{
+        left: 100%;
+        opacity: 0;
+    }
+  
+    nav.menu.active {
+        left: 0;
+        
+    }
+    button { 
+        border:none; 
+    
+        background-color: #FFFFFF;
+    }
+    .login{
+    width: 90%;
+    height: 33%;
+    font-family: login;
+    position: relative;
+    left: 5%;
+    top: 30%;
+
+}
+      .botao{
+    position: fixed;
+    top: 90%;
+    left:35%;
+}
+    .cadastro{
+      width: 90%;
+    height: 40%;
+    font-family: login;
+    position: relative;
+    left: 5%;
+    top: 7%;
+}
+
+h2 {
+    color:#ffc72c;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+   
+}
+h2:hover {
+    color: #55c1e9;
+}
+
+
+h2::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    left: 0;
+    right: 0;
+    bottom: -20px;
+}
+
+.carousel {
+    margin: 50px auto;
+    padding: 0 80px;
+    
+}
+
+.carousel .item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+   
+}
+
+.carousel .item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+    background-color:#fff;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.carousel .item img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.carousel .item h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color:#55c1e9;
+}
+
+.carousel .item .btn {
+    
+    border-radius: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+
+.carousel .item .btn:hover,
+.carousel .item .btn:focus {
+    color: #fff;
+    background-image: linear-gradient( 135deg, #dc4588 10%, #ffc72c 100%);
+    border-color: none;
+    box-shadow: none;
+}
+
+.carousel .item .btn i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.carousel .thumb-wrapper {
+    text-align: center;
+}
+
+.carousel .thumb-content {
+    padding: 15px;
+}
+
+.carousel .carousel-control {
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: #dc4588;
+}
+
+.carousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.carousel .item-price {
+    font-size: 13px;
+
+    padding: 2px 0;
+}
+
+.carousel .item-price span {
+    color: #fff;
+    font-size: 110%;
+}
+
+.carousel .carousel-control.left i {
+    margin-left: -3px;
+}
+
+.carousel .carousel-control.left i {
+    margin-right: -3px;
+}
+
+.carousel .carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    
+    border-radius: 50%;
+    border-color: transparent;
+}
+
+.carousel-indicators li {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li.active {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.add-on .input-group-btn > .btn {
+    border-left-width: 0;
+    left: -2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-color: #cccccc;
+}
